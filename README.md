@@ -9,8 +9,10 @@ This repository is a Anagh Das submission for Getting and Cleaning Data course p
 ### Files
 
   * CodeBook.md a code book that describes the variables, the data, and any transformations or work that I performed to clean up the data
+  
+  * prelim.R performs all the initial and preliminary preparations.
 
-  * run_analysis.R performs the data preparation and then followed by the 5 steps required as described in the course project's definition:
+  * run_analysis.R performs the 5 steps required as described in the course project's definition:
   
       * Merges the training and the test sets to create one data set.
       * Extracts only the measurements on the mean and standard deviation for each measurement.
