@@ -32,8 +32,34 @@ The run_analysis.R script performs the data preparation and then followed by the
    
    4. ### Extracts only the measurements on the mean and standard deviation for each measurement
        
-       * Tdata (10299 rows, 88 columns) is created by subsetting Mdata, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement
+       * Tdata (10299 rows, 88 columns) is created by subsetting Mdata, selecting only columns: subject, code and the variables obtained by applying the mean() and standard deviation() to each of the signals given below.
    
+          + tBodyAcc-XYZ
+          + tGravityAcc-XYZ
+          + tBodyAccJerk-XYZ
+          + tBodyGyro-XYZ
+          + tBodyGyroJerk-XYZ
+          + tBodyAccMag
+          + tGravityAccMag
+          + tBodyAccJerkMag
+          + tBodyGyroMag
+          + tBodyGyroJerkMag
+          + fBodyAcc-XYZ
+          + fBodyAccJerk-XYZ
+          + fBodyGyro-XYZ
+          + fBodyAccMag
+          + fBodyAccJerkMag
+          + fBodyGyroMag
+          + fBodyGyroJerkMag
+   
+       * Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+             
+          + gravityMean
+          + tBodyAccMean
+          + tBodyAccJerkMean
+          + tBodyGyroMean
+          + tBodyGyroJerkMean        
+           
    5. ### Uses descriptive activity names to name the activities in the data set
    
        * Entire numbers in labels column of the Tdata replaced with corresponding activity taken from second column of the activities variable
