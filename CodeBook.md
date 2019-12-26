@@ -32,7 +32,7 @@ The run_analysis.R script performs the data preparation and then followed by the
    
    4. ### Extracts only the measurements on the mean and standard deviation for each measurement
        
-       * Tdata (10299 rows, 88 columns) is created by subsetting Mdata, selecting only columns: subject, code and the variables obtained by applying the mean() and standard deviation() to each of the signals given below.
+       * Tdata (10299 rows, 88 columns) is created by subsetting Mdata, selecting only columns: subject, code and the variables obtained by applying the mean()(Mean value) and std()(Standard daviation) to each of the signals given below.
    
           + tBodyAcc-XYZ
           + tGravityAcc-XYZ
